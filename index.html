@@ -5,121 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Home Decor</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #8b0000;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            background-color: #333;
-        }
-        nav a {
-            display: inline-block;
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 20px;
-        }
-        nav a:hover {
-            background-color: #8b0000;
-        }
-        .hero {
-            background-color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero h2 {
-            color: #8b0000;
-            margin-bottom: 10px;
-        }
-        .services {
-            padding: 50px 20px;
-            background-color: #fff;
-            text-align: center;
-        }
-        .services h2 {
-            color: #8b0000;
-            margin-bottom: 30px;
-        }
-        .services-grid {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .service-box {
-            width: 22%;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .service-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .service-box h3 {
-            color: #333;
-            margin-top: 15px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        footer a {
-            color: #8b0000;
-            text-decoration: none;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #8b0000; color: #fff; padding: 25px 0; text-align: center; }
+        nav { text-align: center; background-color: #333; }
+        nav a { display: inline-block; color: #fff; text-decoration: none; padding: 15px 23px; }
+        nav a:hover { background-color: #8b0000; }
+        .hero { background-color: #fff; text-align: center; padding: 60px 20px; }
+        .hero h2 { color: #8b0000; margin-bottom: 15px; }
+        .services { padding: 60px 20px; background-color: #fff; text-align: center; }
+        .services h2 { color: #8b0000; margin-bottom: 40px; }
+        .services-grid { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+        .service-box { width: 22%; min-width: 250px; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+        .service-box img { max-width: 100%; height: auto; height: 200px; border-radius: 8px; object-fit: cover; }
+        .service-box h3 { color: #8b0000; margin-top: 15px; }
+        .about-section { padding: 60px 20px; background-color: #fff; text-align: center; }
+        .about-text { max-width: 800px; margin: 0 auto; line-height: 1.6; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 25px 0; }
+        footer a { color: #8b0000; text-decoration: none; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Luxury Home Decor</h1>
         <p>Your vision, our craftsmanship: excellence in every corner</p>
     </header>
-
     <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
-
     <div class="hero">
         <h2>Professional Handyman Services</h2>
-        <p>Quality carpentry, painting, tile installation, and general renovations.</p>
+        <p>Quality carpentry, painting, tile installation, and general renovations in Montrose, NY and surrounding areas.</p>
     </div>
-
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <div class="about-text">
+            <p>Welcome to Luxury Home Decor. We specialize in transforming houses into beautiful homes with exceptional craftsmanship and attention to detail. Whether you need a fresh coat of paint, custom carpentry, professional tile work, or a complete renovation, our experienced team ensures outstanding results that exceed your expectations.</p>
+        </div>
+    </section>
     <div class="services" id="services">
         <h2>Our Services</h2>
         <div class="services-grid">
             <div class="service-box">
+                <img src="placeholder-carpentry.jpg" alt="Carpentry Work">
                 <h3>Carpentry</h3>
+                <p>Custom woodworking, cabinetry, trim, and structural repairs.</p>
             </div>
             <div class="service-box">
+                <img src="placeholder-painting.jpg" alt="Painting Work">
                 <h3>Painting</h3>
+                <p>Interior and exterior painting with premium finishes.</p>
             </div>
             <div class="service-box">
+                <img src="placeholder-tile.jpg" alt="Tile Installation">
                 <h3>Tile Installation</h3>
+                <p>Professional installation for floors, walls, backsplashes, and showers.</p>
             </div>
             <div class="service-box">
-                <h3>Renovations</h3>
+                <img src="placeholder-renovations.jpg" alt="General Renovations">
+                <h3>General Renovations</h3>
+                <p>Complete room and whole-house renovations tailored to your needs.</p>
             </div>
         </div>
     </div>
-
+    <div class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="services-grid" style="padding: 20px;">
+            <p>Coming Soon</p>
+        </div>
+    </div>
     <footer>
-        <p>Contact us: <a href="mailto:info@luxuryhomedecor.com">info@luxuryhomedecor.com</a></p>
+        <p>Contact us: <a href="mailto:info@luxuryhomesdecor.com">info@luxuryhomedecor.com</a> | Phone: (555) 123-4567</p>
+        <p>&copy; 2026 Luxury Home Decor</p>
     </footer>
-
 </body>
 </html>
